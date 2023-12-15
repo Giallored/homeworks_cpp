@@ -57,7 +57,7 @@ int main(){
     auto end = get_end(endings,name);
 
     //<NAME>, the <ADJECTIVE> <NOUN> that <ENDING>
-    printf("\n%s, the %s %s that %s\n", name.c_str(), adj.c_str(),
+    printf("\n\nHere is your description:\n%s, the %s %s that %s\n", name.c_str(), adj.c_str(),
                                      nouns.at(season).c_str(),end.c_str());
     return 0;
 }
