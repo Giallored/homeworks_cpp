@@ -47,19 +47,17 @@ int main(){
 
     cout << "\nPlease enter an adjective: "; 
     cin >> adj_1; 
-    cout << adj_1;
     adjectives.push_back(adj_1);
 
-    cout << "\nPlease enter another adjective:"; 
+    cout << "\nPlease enter another adjective: "; 
     cin >> adj_2;
-    cout << adj_2;
     adjectives.push_back(adj_2);
 
     auto adj = get_adj(adjectives,name);
     auto end = get_end(endings,name);
 
     //<NAME>, the <ADJECTIVE> <NOUN> that <ENDING>
-    printf("\n\n%s, the %s %s that %s\n", name.c_str(), adj.c_str(),
+    printf("\n%s, the %s %s that %s\n", name.c_str(), adj.c_str(),
                                      nouns.at(season).c_str(),end.c_str());
     return 0;
 }
